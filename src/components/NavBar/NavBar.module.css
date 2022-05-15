@@ -1,0 +1,116 @@
+
+.container{
+    background-color: #C3C2C1;
+    font-family: 'Macondo', cursive;
+    display: flex;
+    justify-content: center;
+    height: 9.5vh;
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    width:100%;
+    
+}
+
+.navBar{
+    width:90vw;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:space-between;
+    padding-bottom: 18px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+/********** logotype **********/
+
+.navBar__logo{
+   width: 50px;  
+    
+}
+
+/********** links menu **********/
+
+.navBar__links{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 0 10px;
+    list-style: none;
+}
+
+.navBar__links .navBar__linksTo{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.navBar__links .navBar__linksToActive{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navBar .mobileNavigation{
+    display:none;
+}
+
+/********** queries **********/
+
+@media (max-width: 1024px){
+
+}
+
+@media (max-width: 768px){
+
+    .navBar .navigation{
+        display:none;
+    }
+
+    /********** mobile menu **********/
+
+    .navBar .mobileNavigation{
+        display:flex;
+        align-items: flex-end;
+    }
+
+    .navBar .mobileNavigation .navBar__links{
+        background-color: var(--main-color);
+        border-top: 1px solid var(--blue);
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        position:absolute;
+        top:9.5vh;
+        right:0;
+        width: 100%;
+    }
+
+    .navBar .mobileNavigation .navBar__links li{
+        padding: 20px 0px 25px 30px;
+    }
+
+    .navBar .mobileNavigation .burguer{
+        position: absolute;
+        right: 5%;
+        bottom: 13px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 480px){
+    
+    /********** logotype **********/
+    
+    .navBar__logo{
+        width:80px;
+    }
+    
+    /********** links menu **********/
+
+}
