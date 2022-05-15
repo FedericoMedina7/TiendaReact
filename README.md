@@ -1,18 +1,12 @@
-## Tienda e-commerce | _React.js_ | Coderhouse
+# Tienda e-commerce con React.js para proyecto final en Coderhouse!
 
-Proyecto final educativo realizado para el curso de React.js de Coderhouse.
-Desarrollo de un sitio e-commerce en React.js
+La aplicación permite conectarse con un backend realizado con Firebase. Permitir seleccionar ciertos productos, navegar a sus detalles, agregarlos al carrito, poder acceder a él, simular la compra de los productos. Al hacer clic sobre el botón "Finalizar Orden", pide llenar un formulario con datos básicos y luego de confirmar se genera un id de orden para el usuario y en firebase se guarda la orden con los productos que compró.
 
-## Dependencies
+Se utilizó:
+Firebase
+React-Icons
+React-router-dom
 
-| Dependencia | Version | Funcion
-| ------ | ------ | ------ |
-| react-router-dom | 6.2.2 | Navegabilidad 
-| firebase | 9.6.10 | Base de Datos
-| react-icons | 4.3.1 | Iconos
+### Demo de la aplicación
 
-## Demo
-
-```sh
-https://radiant-griffin-461d87.netlify.app/
-```
+https://tangerine-fenglisu-74e724.netlify.app
