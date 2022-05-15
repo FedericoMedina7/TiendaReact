@@ -16,7 +16,7 @@ const Routesapp = () => {
           <Route
             path="/"
             element={
-              <ItemListContainer greeting="* Bienvenido al viveruski *" />
+              <ItemListContainer greeting="Bienvenidos a KongoStore!" />
             }
           />
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
